@@ -76,10 +76,20 @@ function copiarTexto() {
   
     // Verificar si el texto está en blanco
     if (textoEncriptado.trim() === '') {
-        alert('No hay anda que copiar!');
+        Swal.fire({
+            title: 'UPS!',
+            text: 'No hay texto en el campo',           
+            icon: 'error',
+            width: 600,
+            padding: '2em',
+            color: 'black',
+            background: 'url(https://img.freepik.com/vector-premium/pensamiento-caracter-hombre_155707-268.jpg)',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'Entiendo'
+          });
         return;
     }
-
+    
     // Crear un elemento de textarea temporal
     const textareaTemp = document.createElement('textarea');
     textareaTemp.value = textoEncriptado;
@@ -98,6 +108,15 @@ function copiarTexto() {
     document.body.removeChild(textareaTemp);
   
     // Mostrar un mensaje de éxito
-    alert('Texto copiado al portapapeles');
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        color: 'black',
+        width: 400,
+        title: 'Texto copiado al portapapeles',
+        showConfirmButton: false,
+        background: '#007BFF',
+        timer: 1500
+      })
   }
   

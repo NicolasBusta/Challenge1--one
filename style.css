@@ -1,7 +1,13 @@
 *{
-    background: #F3F5FC;
-    font-family: 'Inter';
-    
+    font-family: 'Inter'; 
+}
+
+.bodySection{
+    background-color: #fcf9f3;
+  }
+ 
+h1{
+    text-shadow: 2px 2px 4px rgba(23, 107, 186, 0.8);
 }
 
 main{
@@ -14,8 +20,9 @@ main{
 .boxText1{
     border: none;
     color: #008080;
-    margin-top: 90px;
+    height: 400px;
     text-transform: lowercase;
+    resize: none;
 }
 ::placeholder{color: #008080;}
     .boxText1:focus{
@@ -29,9 +36,8 @@ main{
     border: none;
     border-radius: 24px;
     color:#008080;
-    margin-top: 20px;
-    margin-left: 15px;
-    padding-left: 20px;
+    height: 400px;
+    resize: none;
     
 }
 .boxText2:focus{
@@ -43,7 +49,7 @@ main{
 }
 .botones{
     display: flex;
-    margin-top: 18px;
+    
 }
 .btn-encriptador{
     background-color: #008080;
@@ -72,12 +78,9 @@ main{
     cursor: pointer;
     height: 67px;
     width: 300px;
-    margin-top: 16px;
-    margin-left: 20px;
-    position: absolute;
-
+   
 }
-footer{
+.footerc{
     background: linear-gradient(to bottom, #4e98e0, #265b99);
       padding: 20px;
       text-align: center;
@@ -87,7 +90,8 @@ footer{
       width: 100%;
 }
 .datosFooter{
-    background-color: rgba(0, 0, 255, 0.0);
+      color: black;
+      text-shadow: 2px 2px 4px rgba(17, 222, 212, 0.8);
       padding: 10px;
       font-size: 20px;
 }
@@ -119,8 +123,7 @@ footer{
 
     }
     .boxText2{
-        margin-left: -10px;
-       
+       margin-top: 10px;
     }
 
     .aviso {
@@ -154,4 +157,5 @@ footer{
         width: 100%;
         margin-top: 100px;
     }
+    
 }
